@@ -34,8 +34,8 @@
       $('form').submit(function(event) {
         var correctinput = true;
         var address = $("#streetaddr").val();
-        var name = $("#fullname").val();
-        if (name == 0){
+        var names = $("#fullname").val();
+        if (names == 0){
           $("#nameerrormsg").css("display", "block")
           event.preventDefault();
           correctinput = false;
